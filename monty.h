@@ -58,5 +58,6 @@ extern bus_t bus;
 void f_push(stack_t **head, unsigned int counter);
 void f_pall(stack_t **head, unsigned int number);
 void addnode(stack_t **head, int n);
+void f_pint(stack_t **head, unsigned int counter);
 
 #endif
