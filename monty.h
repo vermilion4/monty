@@ -62,5 +62,11 @@ void f_push(stack_t **head, unsigned int counter);
 void f_pall(stack_t **head, unsigned int number);
 void addnode(stack_t **head, int n);
 void f_pint(stack_t **head, unsigned int counter);
+int execute(char *content, stack_t **head, unsigned int counter, FILE *file);
+void free_stack(stack_t *head);
+void f_pop(stack_t **head, unsigned int counter);
+void f_swap(stack_t **head, unsigned int counter);
+void f_add(stack_t **head, unsigned int counter);
+void f_nop(stack_t **head, unsigned int counter);
 
 #endif
