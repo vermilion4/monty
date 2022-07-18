@@ -15,6 +15,7 @@ instruction_t opst[] = {
 {"swap", f_swap},
 {"add", f_add},
 {"nop", f_nop},
+{"queue", f_queue},
 {NULL, NULL}
 };
 unsigned int i = 0;
