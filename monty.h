@@ -25,20 +25,6 @@ struct stack_s *next;
 } stack_t;
 
 /**
- * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
- *
- * Description: opcode and its function
- * for stack, queues, LIFO, FIFO
- */
-typedef struct instruction_s
-{
-char *opcode;
-void (*f)(stack_t **stack, unsigned int line_number);
-} instruction_t;
-
-/**
  * struct bus_s - variables -args, file, line content
  * @arg: value
  * @file: pointer to monty file
@@ -54,6 +40,20 @@ char *content;
 int lifi;
 }  bus_t;
 extern bus_t bus;
+
+/**
+ * struct instruction_s - opcode and its function
+ * @opcode: the opcode
+ * @f: function to handle the opcode
+ *
+ * Description: opcode and its function
+ * for stack, queues, LIFO, FIFO
+ */
+typedef struct instruction_s
+{
+char *opcode;
+void (*f)(stack_t **stack, unsigned int line_number);
+} instruction_t;
 
 char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
 ssize_t getstdin(char **lineptr, int file);
